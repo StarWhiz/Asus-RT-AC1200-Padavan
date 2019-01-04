@@ -2,7 +2,7 @@
 
 ASUS RT-AC1200 Router Firmware
 
-This is custom firmware (Padavan) that has been built for the Asus RT-AC1200 Dual band AC Router.
+This is custom firmware (by Padavan) that has been built for the Asus RT-AC1200 Dual band AC Router.
 
 It's been built with some modifications to the base config from: https://bitbucket.org/padavan/rt-n56u/src/32a93db4026cc2cff585d7008373432d888fc1aa/trunk/configs/templates/ac1200hp_base.config?at=master&fileviewer=file-view-default
 
