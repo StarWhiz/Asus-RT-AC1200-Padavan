@@ -24,10 +24,8 @@ Trying to update the stock firmware through the ASUS web GUI will NOT WORK! For 
 
 ###Instructions:###
 1) Download RT-AC1200_3.4.3.9-099 from this repository
-2) -Download the Asus recovery firmware (windows) tool from http://dlcdnet.asus.com/pub/ASUS/LiveUpdate/Release/Wireless/Rescue.zip
-   -Also works on a Windows VM with a bridged network adapter to the ethernet port with a manual IP
-   -Set your ethernet IP manually 192.168.1.5 / 255.255.255.0 with NO gateway
-   
+2) Download the Asus recovery firmware (windows) tool from http://dlcdnet.asus.com/pub/ASUS/LiveUpdate/Release/Wireless/Rescue.zip 
+3) Set your ethernet IP manually 192.168.1.5 / 255.255.255.0 with NO gateway
 3) Plug in your ethernet to LAN port 1 on the router
 
 4) Load up the recovery software with the RT-AC1200_3.4.3.9-099 firmware file, but don't press "Upload" yet.
