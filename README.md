@@ -12,9 +12,10 @@ CONFIG_FIRMWARE_INCLUDE_QOS=y
 
 OPENVPN was not included because it caused the build to fail.
 QOS was included for Smart Queue Management with fq_codel
-
 fq_codel must be configured by your own script (via 'tc' utility).
 The webUI does not support QoS/Shaper. (Source: https://bitbucket.org/padavan/rt-n56u/issues/170/smart-queue-management)
+
+I built this version for the purpose of stopping bufferbloat or lag for my fellow gamer friend with this specific router model. You can read more about this on my website at www.stoplagging.com
 
 
 *These instructions written below were based off the RT-N600 readme.md from https://github.com/russinnes/RT-N600-Padavan by russinnes
@@ -27,14 +28,14 @@ Trying to update the stock firmware through the ASUS web GUI will NOT WORK! For 
    -Also works on a Windows VM with a bridged network adapter to the ethernet port with a manual IP
    -Set your ethernet IP manually 192.168.1.5 / 255.255.255.0 with NO gateway
    
-4) Plug in your ethernet to LAN port 1 on the router
+3) Plug in your ethernet to LAN port 1 on the router
 
-5) Load up the recovery software with the RT-AC1200_3.4.3.9-099 firmware file, but don't press "Upload" yet.
+4) Load up the recovery software with the RT-AC1200_3.4.3.9-099 firmware file, but don't press "Upload" yet.
 
-6) Plug in the router to power WHILE HOLDING the reset button in. While CONTINUING to hold the button, select "Upload"
+5) Plug in the router to power WHILE HOLDING the reset button in. While CONTINUING to hold the button, select "Upload"
    Continue to hold the reset button in until it finishes and verifies!
    
-6b) If that doesn't work try pressing "Upload" first just before you do step 6. At some point while holding reset the rescue tool will finally detect and upload the firmware. That's when you can let go of the reset button.
+6) If that doesn't work try pressing "Upload" first just before you do step 6. At some point while holding reset the rescue tool will finally detect and upload the firmware. That's when you can let go of the reset button.
    
 7) The router will reboot and not much will happen. Wait a minute or 2. 
 
