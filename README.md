@@ -23,7 +23,7 @@ The webUI does not support QoS/Shaper. (Source: https://bitbucket.org/padavan/rt
 I built this version for the purpose of stopping bufferbloat or lag for my fellow gamer friend with this specific router model. You can read more about this on my website at www.stoplagging.com
 
 
-## Firmware Flashing Instructions ###
+## Firmware Flashing Instructions ##
 Trying to update the stock firmware through the ASUS web GUI will NOT WORK!
 
 *These instructions written below were based off the RT-N600 readme.md from https://github.com/russinnes/RT-N600-Padavan by russinnes
@@ -47,5 +47,15 @@ Trying to update the stock firmware through the ASUS web GUI will NOT WORK!
 9) L:admin P:admin
 
  
+## Enabling fq_codel on startup ##
 
+* Navigate to Advanced Settings > Administration > Settings
+* Then under NVRAM to Flash Meory Committing Mode: Choose "Manual Only"
+* Navigate to Advanced Settings > Customization > Scripts > Run After Router Started:
+* Then add the following line to the bottom of the script
+> tc qdisc add dev eth2 root fq_codel
+* After that press "Commit" near the logout buttom.
+* When prompted, answer "Yes" to commit from NVMRAM to Flash.
+
+eth2 is my WAN interface in this example. yours might be different. you can check which interface is your wan by typing "ifconfig" when you ssh or telnet into the router.
   
