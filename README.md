@@ -53,9 +53,23 @@ Trying to update the stock firmware through the ASUS web GUI will NOT WORK!
 * Then under NVRAM to Flash Meory Committing Mode: Choose "Manual Only"
 * Navigate to Advanced Settings > Customization > Scripts > Run After Router Started:
 * Then add the following line to the bottom of the script
-> tc qdisc add dev eth2 root fq_codel
+
+> IF=eth2
+
+> tc qdisc del dev $IF root
+
+> tc qdisc add dev $IF root handle 1: htb
+
+> tc class add dev $IF parent 1: classid 1:1 htb rate 3800kbps
+
+> tc qdisc add dev $IF parent 1:1 handle 10: fq_codel
+
+> tc filter add dev $IF protocol ip prio 1 u32 match ip dst 0.0.0.0/0 flowid 1:1
+
 * After that press "Commit" near the logout buttom.
 * When prompted, answer "Yes" to commit from NVMRAM to Flash.
 
 eth2 is my WAN interface in this example. yours might be different. you can check which interface is your wan by typing "ifconfig" when you ssh or telnet into the router.
+
+3800kbps was about 90% of my actual upload speed of 4200kbps.
   
