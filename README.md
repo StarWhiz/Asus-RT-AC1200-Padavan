@@ -49,10 +49,8 @@ Trying to update the stock firmware through the ASUS web GUI will NOT WORK!
  
 ## Enabling fq_codel on startup ##
 
-* Navigate to Advanced Settings > Administration > Settings
-* Then under NVRAM to Flash Meory Committing Mode: Choose "Manual Only"
 * Navigate to Advanced Settings > Customization > Scripts > Run After Router Started:
-* Then add the following line to the bottom of the script
+* Then add the following lines to the bottom of the script
 
 > IF=eth2
 
@@ -66,8 +64,10 @@ Trying to update the stock firmware through the ASUS web GUI will NOT WORK!
 
 > tc filter add dev $IF protocol ip prio 1 u32 match ip dst 0.0.0.0/0 flowid 1:1
 
-* After that press "Commit" near the logout buttom.
-* When prompted, answer "Yes" to commit from NVMRAM to Flash.
+
+* After adding those likes press "save" on the bottom of the web GUI.
+* Then navigate to Advanced Settings > Administration > Settings
+* Under the "Commit Internal Storage to Flash Memory Now:" option press the "commit button" to actually save changes.
 
 eth2 is my WAN interface in this example. yours might be different. you can check which interface is your wan by typing "ifconfig" when you ssh or telnet into the router.
 
