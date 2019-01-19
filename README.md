@@ -4,6 +4,8 @@ ASUS RT-AC1200 Router Firmware
 
 This is custom firmware (by Padavan) that has been built for the Asus RT-AC1200 Dual band AC Router.
 
+Wifi 2.4G/5G work. Basic out of the box functions appear to work as well...
+
 It's been built with some modifications to the base config from: https://bitbucket.org/padavan/rt-n56u/src/32a93db4026cc2cff585d7008373432d888fc1aa/trunk/configs/templates/ac1200hp_base.config?at=master&fileviewer=file-view-default
 
 ## Modifications to build:
@@ -47,8 +49,8 @@ Trying to update the stock firmware through the ASUS web GUI will NOT WORK!
 9) L:admin P:admin
 
  
-## Enabling fq_codel on startup ##
-
+## Enabling fq_codel on startup (Doesn't actually work to stop lag... still working on this)##
+* NOTE The fq_codel settings don't work yet.... Ignore instructions below for now..
 * Navigate to Advanced Settings > Customization > Scripts > Run After Router Started:
 * Then add the following lines to the bottom of the script
 
