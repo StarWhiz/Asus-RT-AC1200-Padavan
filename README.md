@@ -52,26 +52,13 @@ Trying to update the stock firmware through the ASUS web GUI will NOT WORK!
 ## Enabling fq_codel on startup (Doesn't actually work to stop lag... still working on this)##
 * NOTE The fq_codel settings don't work yet.... Ignore instructions below for now..
 * Navigate to Advanced Settings > Customization > Scripts > Run After Router Started:
-* Then add the following lines to the bottom of the script
+* Then copy the lines from the script on this repository: https://github.com/StarWhiz/Asus-RT-AC1200-Padavan/blob/master/fq_codel%20script%20for%20Asus%20AC1200.txt
 
-> IF=eth2
-
-> tc qdisc del dev $IF root
-
-> tc qdisc add dev $IF root handle 1: htb
-
-> tc class add dev $IF parent 1: classid 1:1 htb rate 3800kbps
-
-> tc qdisc add dev $IF parent 1:1 handle 10: fq_codel
-
-> tc filter add dev $IF protocol ip prio 1 u32 match ip dst 0.0.0.0/0 flowid 1:1
-
-
-* After adding those likes press "save" on the bottom of the web GUI.
+* After pasting in the script change WAN_UP_SPEED= and WAN_DOWN_SPEED= to be 90% of your max upload speed and 90% of your max download speed. Otherwise fq_codel won't work.
+* Finally press "save" on the bottom of the web GUI.
 * Then navigate to Advanced Settings > Administration > Settings
 * Under the "Commit Internal Storage to Flash Memory Now:" option press the "commit button" to actually save changes.
 
-eth2 is my WAN interface in this example. yours might be different. you can check which interface is your wan by typing "ifconfig" when you ssh or telnet into the router.
+* eth2 is my WAN interface in this example. yours might be different. you can check which interface is your wan by typing "ifconfig" when you ssh or telnet into the router.
 
-3800kbps was about 90% of my actual upload speed of 4200kbps.
   
