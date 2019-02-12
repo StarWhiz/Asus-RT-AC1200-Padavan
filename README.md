@@ -55,10 +55,13 @@ Trying to update the stock firmware through the ASUS web GUI will NOT WORK!
 * Then copy the lines from the script on this repository: https://github.com/StarWhiz/Asus-RT-AC1200-Padavan/blob/master/fq_codel%20script%20for%20Asus%20AC1200.txt
 
 * After pasting in the script change WAN_UP_SPEED= and WAN_DOWN_SPEED= to be 90% of your max upload speed and 90% of your max download speed. Otherwise fq_codel won't work.
-* Finally press "save" on the bottom of the web GUI.
+* Finally press "Apply" on the bottom of the web GUI.
 * Then navigate to Advanced Settings > Administration > Settings
-* Under the "Commit Internal Storage to Flash Memory Now:" option press the "commit button" to actually save changes.
+* Under the "Commit NVRAM Content to Flash Memory Now:" option press the "commit button" to actually save changes.
 
 * eth2 is my WAN interface in this example. yours might be different. you can check which interface is your wan by typing "ifconfig" when you ssh or telnet into the router.
+
+* Congrats now you'll never lag in games again! Check out www.stoplagging.com if you have a different router.
+* Credits to : /u/nicefile for linking me to: http://openrouter.info/forum/viewtopic.php?f=21&t=4605 which helped me make this guide
 
   
