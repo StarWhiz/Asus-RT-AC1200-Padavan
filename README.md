@@ -49,7 +49,7 @@ Trying to update the stock firmware through the ASUS web GUI will NOT WORK!
 9) L:admin P:admin
 
  
-## Enabling fq_codel on startup (Doesn't actually work to stop lag... still working on this)##
+## Enabling fq_codel on startup to stop lag or bufferbloat on online games ##
 * NOTE The fq_codel settings don't work yet.... Ignore instructions below for now..
 * Navigate to Advanced Settings > Customization > Scripts > Run After Router Started:
 * Then copy the lines from the script on this repository: https://github.com/StarWhiz/Asus-RT-AC1200-Padavan/blob/master/fq_codel%20script%20for%20Asus%20AC1200.txt
