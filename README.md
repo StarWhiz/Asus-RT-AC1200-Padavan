@@ -62,6 +62,6 @@ Trying to update the stock firmware through the ASUS web GUI will NOT WORK!
 * eth2 is my WAN interface in this example. yours might be different. you can check which interface is your wan by typing "ifconfig" when you ssh or telnet into the router.
 
 * Congrats now you'll never lag in games again! Check out www.stoplagging.com if you have a different router.
-* Credits to : /u/nicefile for linking me to: http://openrouter.info/forum/viewtopic.php?f=21&t=4605 which helped me make this guide
+* Credits to : /u/nicefile on reddit for linking me to: http://openrouter.info/forum/viewtopic.php?f=21&t=4605 which helped me make this guide
 
   
