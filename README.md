@@ -18,11 +18,7 @@ CONFIG_FIRMWARE_INCLUDE_QOS=y
 
 OPENVPN was not included because it caused the build to fail.
 
-QOS was included for Smart Queue Management with fq_codel
-
-fq_codel must be configured by your own script (via 'tc' utility).
-
-The webUI does not support QoS/Shaper. (Source: https://bitbucket.org/padavan/rt-n56u/issues/170/smart-queue-management)
+QOS was included for Smart Queue Management with fq_codel. There is no GUI for this. I show you how to enable it below though.
 
 I built this version for the purpose of stopping bufferbloat or lag for my fellow gamer friend with this specific router model. You can read more about this on my website at www.stoplagging.com
 
