@@ -8,6 +8,8 @@ Wifi 2.4G/5G work. Basic out of the box functions appear to work as well...
 
 It's been built with some modifications to the base config from: https://bitbucket.org/padavan/rt-n56u/src/32a93db4026cc2cff585d7008373432d888fc1aa/trunk/configs/templates/ac1200hp_base.config?at=master&fileviewer=file-view-default
 
+I basically followed this guide to compile the build: https://bitbucket.org/padavan/rt-n56u/wiki/EN/HowToMakeFirmware
+
 ## Modifications to build:
 
 CONFIG_FIRMWARE_INCLUDE_OPENVPN=n
