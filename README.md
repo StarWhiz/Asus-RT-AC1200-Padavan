@@ -24,6 +24,10 @@ The webUI does not support QoS/Shaper. (Source: https://bitbucket.org/padavan/rt
 
 I built this version for the purpose of stopping bufferbloat or lag for my fellow gamer friend with this specific router model. You can read more about this on my website at www.stoplagging.com
 
+## Minor Problems ##
+1) USB LED is always on, even if there is no USB device (Discovered by: [JackMerlin](/JackMerlin))
+2) The WIFI indicator is still on even after 2.4GHz is turned off. (Discovered by: [JackMerlin](/JackMerlin))
+
 
 ## Firmware Flashing Instructions ##
 Trying to update the stock firmware through the ASUS web GUI will NOT WORK!
