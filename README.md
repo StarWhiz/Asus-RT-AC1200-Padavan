@@ -2,7 +2,7 @@
 
 ASUS RT-AC1200 Router Firmware
 
-This is custom firmware (by Padavan) that has been built for the Asus RT-AC1200 Dual band AC Router. The one with the 580Mhz MediaTek MT7628AN. This model doesn't have any additionay letters next to the AC1200. Don't flash this on the broadcom chip versions.
+This is custom firmware (by Padavan) that has been built for the Asus RT-AC1200 Dual band AC Router. The one with the 580Mhz MediaTek MT7628AN. This model doesn't have any additional letters next to the AC1200. Don't flash this on the broadcom versions.
 
 Wifi 2.4G/5G work. Basic out of the box functions appear to work as well...
 
